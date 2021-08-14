@@ -1,0 +1,17 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"/>
+<script>
+	function param(name) {
+	    return (location.search.split(name + '=')[1] || '').split('&')[0];
+	}
+	$(function() {
+		alert(param('report'));
+	});
+</script>
+</head>
+<body>
+<textarea id="report" name="review" rows="4" cols="50">
+</textarea>
+</body>
+</html>
