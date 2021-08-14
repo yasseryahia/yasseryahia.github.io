@@ -6,13 +6,13 @@
 	    return (location.search.split(name + '=')[1] || '').split('&')[0];
 	}
 	$(function() {
-		$("#report").text(param("report"));
+		$("#report").html(param("report"));
 	});
 </script>
 </head>
 <body>
-<textarea id="report" name="review" rows="4" cols="50">
-</textarea>
+<div id="report">
+	
+</div>
 </body>
 </html>
-
