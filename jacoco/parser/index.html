@@ -2,12 +2,15 @@
 <head>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
+
+	$(function() {
+	    $("#report").innerText = param("report");
+	});
+
 	function param(name) {
 	    return (location.search.split(name + '=')[1] || '').split('&')[0];
 	}
-	$(function() {
-		$("#report").innerText = param("report");
-	});
+	
 </script>
 </head>
 <body>
