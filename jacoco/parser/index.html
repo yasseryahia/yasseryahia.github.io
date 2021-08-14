@@ -6,7 +6,7 @@
 	    return (location.search.split(name + '=')[1] || '').split('&')[0];
 	}
 	$(function() {
-		$("#report").html(param("report"));
+		$("#report").innerText = param("report");
 	});
 </script>
 </head>
